@@ -1,5 +1,5 @@
 # ephemeral disks (coma separated list)
-DISKS=/dev/xvdb
+DISKS=/dev/nvme1n1
 
 # enable RAID
 ENABLE_MD=0
@@ -26,7 +26,7 @@ VG_NAME=ephemeral
 LV_SWAP=swap
 
 # LV size of data
-LV_SWAP_SIZE="1024M"
+LV_SWAP_SIZE="65536M"
 
 # LV name of data *** DON'T CHANGE THIS SETTING ***
 LV_DATA=data
