@@ -88,6 +88,8 @@ fi
 
 if [ "$ENABLE_SWAP" -eq "1" ]; then
     echo "Activating swap ..."
+    swapoff -a
+    swapon -a
     swapon "/dev/$VG_NAME/$LV_SWAP"
 fi
 
